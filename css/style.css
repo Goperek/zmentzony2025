@@ -45,26 +45,6 @@ body {
 }
 
 
-.logo img {
-    height: 50px; /* Dostosuj do potrzeb */
-    width: auto;
-    transition: transform 0.3s ease;
-}
-
-.logo img:hover {
-    transform: scale(1.05);
-}
-
-/* Graficzny slogan */
-.slogan-graphic {
-    max-width: 400px; /* Dostosuj szerokość */
-    width: 100%;
-    height: auto;
-    margin: 0 auto 3rem;
-    display: block;
-    animation: fadeIn 1.5s ease-in-out forwards;
-}
-
 /* Nagłówek */
 header {
     position: fixed;
@@ -195,14 +175,6 @@ footer {
         background-color: rgba(0, 0, 0, 0.9);
         padding: 2rem;
     }
-
-        .logo img {
-        height: 40px;
-    }
-    
-    .slogan-graphic {
-        max-width: 300px;
-    }
     
     .nav-links.active {
         display: flex;
@@ -210,17 +182,6 @@ footer {
     
     .hamburger {
         display: block;
-    }
-}
-
-@media (max-width: 480px) {
-    .logo img {
-        height: 35px;
-    }
-    
-    .slogan-graphic {
-        max-width: 250px;
-        margin-bottom: 2rem;
     }
 }
 
