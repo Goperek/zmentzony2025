@@ -46,3 +46,15 @@ window.addEventListener('scroll', function() {
         header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
     }
 });
+
+document.querySelectorAll('.download-btn').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const link = document.createElement('a');
+        link.href = this.href;
+        link.download = this.getAttribute('download') || this.href.split('/').pop();
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    });
+});
