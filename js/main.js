@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Animate program points on scroll
-    const programPoints = document.querySelectorAll('.point');
+    const programPoints = document.querySelectorAll('.program-card');
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry, index) => {
             if (entry.isIntersecting) {
@@ -58,3 +58,4 @@ document.querySelectorAll('.download-btn').forEach(btn => {
         document.body.removeChild(link);
     });
 });
+
